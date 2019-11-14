@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <% include ../partials/head %>
+        <link href="../../public/styles/forgot.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <% include ../partials/header %>
+        </header>
+        <main role="main" class="content">
+                <form action="/forgot" method="POST"> 
+                    <h5><% include ../partials/messages %></h5>
+                    <legend>Forgot Password</legend><br>
+                    <div class="form-group">
+                      <label for="email">Enter your email address
+                        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                      </label>and <button type="submit" class="btn btn-primary">Reset password</button> 
+                    </div>
+                </form>
+        </main>
+        <footer>
+            <% include ../partials/footer %>
+        </footer>
+    </body>
+</html>

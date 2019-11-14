@@ -1,0 +1,15 @@
+body {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr; 
+    grid-gap: 10px;
+}
+
+.divMargin {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#divImg {
+    width: 70%;
+    padding-left: 20%;
+}

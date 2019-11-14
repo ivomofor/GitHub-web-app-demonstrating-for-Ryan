@@ -1,0 +1,28 @@
+{
+  "name": "adevonx",
+  "version": "1.0.0",
+  "description": "Application Development Operation ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Adevon",
+    "version",
+    "1.0"
+  ],
+  "author": "ivo mofor",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.1.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "mongoose": "^5.6.9",
+    "nodemailer": "^6.3.0"
+  }
+}

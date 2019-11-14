@@ -1,0 +1,37 @@
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-rows: 0.1fr  0.1fr  0.1fr ;
+}
+
+#contact-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 40px; 
+    grid-column-gap: 10px
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+    border: 1px solid #dddddd;
+    }
+    textarea {
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #dddddd;
+    }
+    #submit {
+        color: #10171b;
+        border: 5px solid #dddddd;
+        float: left;
+    }
+    input:focus:invalid {
+        background-color:rgba(211, 211, 224, 0.788);
+    }
+    input:focus:valid {
+        background-color:rgba(7, 243, 19, 0.5); 

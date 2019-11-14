@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <% include ../partials/head %>
+        <link rel="stylesheet" href="../../public/styles/contact.css" />
+        <link rel="stylesheet" href="../../public/styles/main.css"/>
+    </head>
+    <body>
+        <header>
+            <% include ../partials/header %>
+        </header>
+        <div id="contact-div">
+            <section>
+                <h2>It's nice to meet you!</h2>
+                    Give us a brief idea of what you're looking for and we'll be in touch.<br><br>
+                    Tell us about your project by filling the form on the right.
+                <p>Describe your project and the goals you wish to achieve.</p>
+                <p>What are your budget requirements? We'll provide recommendations on the most 
+                    appropriate solutions for your project accordingly.</p>
+                <p>
+                     When would you like to begin? When would you like the
+                    project finished? Please describe any deadlines you need to meet or email to:
+                    info.adevon@gmail.com
+                </p>
+            </section>
+            <form id="contact-form" action="/contact" method="POST" name="ContactForm" style="margin: auto">
+                <span style="color: rgb(10, 194, 10)"><% include ../partials/messages %></span>
+                <p>
+                    <label for="firstName">Fist Name</label><br>
+                    <input type="text" name="firstName" required id="firstName" class="contactForm" autofocus/>
+                </p>
+                <p>
+                    <label for="last-name">Last name</label><br>
+                    <input type="test" name="lastName" required id="lastName" class="contactForm"/>
+                </p>
+                <p>
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" name="phone" id="PhoneNumber" class="contactForm"/>
+                </p>
+                <p>
+                    <lable for="email">Email </lable><br>
+                    <input type="email" name="email" required id="Email" class="contactForm" placeholder="info.adevon@gmail.com" />
+                </p>
+                    <label for="message">Message</label><br>
+                        <textarea id="txtMsg" rows="4" cols="39" name="message" required class="contactForm"></textarea><br>
+                    <label for="submit">
+                        <input type="submit" name="submit" id="submit" value="Contact Us"   class="contactForm"/>
+                    </label>
+            </form>
+        </div>
+        <footer>
+            <% include ../partials/footer %>
+        </footer>
+        <% include ../partials/scripts %>
+    </body>
+</html>

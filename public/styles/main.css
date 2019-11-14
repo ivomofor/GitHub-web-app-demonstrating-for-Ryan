@@ -1,0 +1,43 @@
+main{
+    margin-left: 8%;
+    margin-right: 8%;
+    display: grid;
+    grid-template-rows:0fr 0fr 0fr 0fr ;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+/*footer #compInfo{
+    margin-left: 5%;   
+}*/
+#small {
+    font-size: x-small;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+footer ul li {
+    padding: 10px;
+    font-size: small; 
+    float: left;
+}
+
+footer li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(128, 69, 69);
+}
+footer li a:hover {
+    color: blue;
+}
